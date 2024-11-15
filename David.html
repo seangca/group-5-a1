@@ -4,84 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        table {
-            border: 2px solid black;
-            border-collapse: collapse;
-            background-color: lightblue;
-        }
-        td {
-            border: 2px solid black;
-            text-align: center;
-        }
-        th {
-            border: 2px solid black;
-            text-align: left;
-        }
-        h1 {
-            border-style: solid;
-            border-color: black;
-            background-color: red;
-            margin-inline-end: 20%;
-        }
-
-        .topnav {
-            overflow: hidden;
-            background-color: #333;
-        }
-
-        .topnav a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        }
-
-        .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-        }
-
-        .topnav a.active {
-        background-color: #04AA6D;
-        color: white;
-        }
-
-        .img {
-            width: 250px;
-            float: right;
-        }
-        
-        p {
-            margin-inline-start: 10%;
-            margin-inline-end: 30%;
-            float: right;
-            text-align: justify;
-            font-size: large;
-        }
-        .topmain {
-            margin-inline-start: 20%;
-            margin-inline-end: 10%;
-        }
-        
-    </style>
-
+    <link rel="stylesheet" href="/styles/david.css">
 </head>
 <body>
 
-    <div class="topnav">
+
+    <nav class="topnav">
         <a href="index.html">Home</a>
         <a href="#main">Story</a>
         <a href="#table">Table</a>
         <a href="#games">Games</a>
-    </div>
-    <section class="topmain">
-        <h1>David Evangelista</h1>  
-        <section id="main">
+    </nav>
+    <main>
+        <h1>David's Gamer Profile</h1>
+        <hr>
+
+        <section class="start">
             <h2>The Start</h2>
-            <section class="story1">
             <p>
                 I have been a playing games since I was a really young age.
                 It all started with the game called pinball you used to find installed in really old computers along with the very first minesweeper game.
@@ -91,22 +30,27 @@
                 This was the starting point for my console gaming or gaming in general.
             </p>
             </section>
-            <h2>The beginning of the end.</h2>
-            <section id="story2">
-            <p>
-            But when my family moved to Canada, this is when my PC journey started and love for video games grew even more.
-                There is this company called Riot Games that made this game called League of Legends and this is where it all started.
-                From here on out, I was addicted to this game and my love of PC and technology grew from there.
-                After earning money from part time jobs, I was able to build my first PC back in 2018 and updgraded it the first time on 2021.
-                The image below is my current PC build which was updated earlier this year. 
-                Until now I am still playing League of Legends. I think this a game that will never leave me, same with some sports games (NBA).
-                Even when I am really old, I am sure I will still be playing some sort of game as long as my love for this does not die.
-            </p>
+            <hr>
+
+            <section id="end">
+                <h2>The Beginning of the End.</h2>
+                <image class="img" 
+                     src="images/IMG_3549.jpg" 
+                     alt="A picture of my gaming PC" 
+                     width="200" 
+                     height="300" 
+                     >
+                <p>
+                    But when my family moved to Canada, this is when my PC journey started and love for video games grew even more.
+                    There is this company called Riot Games that made this game called League of Legends and this is where it all started.
+                    From here on out, I was addicted to this game and my love of PC and technology grew from there.
+                    After earning money from part time jobs, I was able to build my first PC back in 2018 and upgraded it the first time in 2021.
+                    The image below is my current PC build which was updated earlier this year. 
+                    Until now I am still playing League of Legends. I think this is a game that will never leave me, same with some sports games (NBA).
+                    Even when I am really old, I am sure I will still be playing some sort of game as long as my love for this does not die.
+                </p>
             </section>
-            <img class="img"
-                src="images/IMG_3549.jpg" 
-                alt="A picture of my gaming PC" width="200" height="300">   
-        </section>
+            <hr>
 
         <section id="table">
         <h2>What I play and where I play them.</h2>
@@ -183,11 +127,11 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="seanGP.html">Sean</a></li>
+                    <li><a href="sean.html">Sean</a></li>
                     <li><a href="grady.html">Grady</a></li>
                 </ul>
             </nav>
         </footer>
-    </section>
+    </main>
 </body>
 </html>

@@ -1,128 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>David's Gamer Profile</title>
     <link rel="stylesheet" href="/styles/david.css">
 </head>
+
 <body>
 
-
+    <!-- Navigation Bar -->
     <nav class="topnav">
         <a href="index.html">Home</a>
-        <a href="#main">Story</a>
+        <a href="#start">Story</a>
         <a href="#table">Table</a>
         <a href="#games">Games</a>
     </nav>
+
+    <!-- Main Content -->
     <main>
         <h1>David's Gamer Profile</h1>
         <hr>
 
-        <section class="start">
-            <h2>The Start</h2>
-            <p>
-                I have been a playing games since I was a really young age.
-                It all started with the game called pinball you used to find installed in really old computers along with the very first minesweeper game.
-                I was always fond of games in general where it was digital or in real life.
-                But there was point in my life where sports took over, but I eventually went back to video games.
-                It was during highschool and after highschool where I really got into gaming more because of the game called HALO Reach.
-                This was the starting point for my console gaming or gaming in general.
-            </p>
-            </section>
-            <hr>
-
-            <section id="end">
-                <h2>The Beginning of the End.</h2>
-                <image class="img" 
-                     src="images/IMG_3549.jpg" 
-                     alt="A picture of my gaming PC" 
-                     width="200" 
-                     height="300" 
-                     >
+        <!-- Grid Layout -->
+        <div class="grid-container">
+            <!-- The Start Section -->
+            <div class="grid-item" id="start">
+                <h2>The Start</h2>
                 <p>
-                    But when my family moved to Canada, this is when my PC journey started and love for video games grew even more.
-                    There is this company called Riot Games that made this game called League of Legends and this is where it all started.
-                    From here on out, I was addicted to this game and my love of PC and technology grew from there.
-                    After earning money from part time jobs, I was able to build my first PC back in 2018 and upgraded it the first time in 2021.
-                    The image below is my current PC build which was updated earlier this year. 
-                    Until now I am still playing League of Legends. I think this is a game that will never leave me, same with some sports games (NBA).
-                    Even when I am really old, I am sure I will still be playing some sort of game as long as my love for this does not die.
+                    I have been playing games since I was a really young age. It all started with the game called
+                    Pinball
+                    you used to find installed in really old computers along with the very first Minesweeper game. I was
+                    always fond of games in general, whether digital or in real life.
                 </p>
-            </section>
-            <hr>
+                <p>
+                    There was a point in my life where sports took over, but I eventually went back to video games. It
+                    was
+                    during high school and after high school where I really got into gaming more because of the game
+                    HALO Reach.
+                    This was the starting point for my console gaming or gaming in general.
+                </p>
+            </div>
 
-        <section id="table">
-        <h2>What I play and where I play them.</h2>
-        <table>
-            <tr>
-                <th rowspan="2">Games</th>
-                <th colspan="3">Platform</th>
-            </tr>
-            <tr>
-                <td>PC Master</td>
-                <td>Xbox</td>
-                <td>PS5</td>
-            </tr>
-            <tr>
-                <th>Riot Games (League of Legend/Valorant)</th>
-                <td>X</td>
-                <td>X</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>HALO series</th>
-                <td>X</td>
-                <td>X</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>Farming Games (Stardew Valley)</th>
-                <td>X</td>
-                <td>X</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>Sports Games (NBA, FIFA, NHL, etc.)</th>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-            </tr>
-            <tr>
-                <th>Diablo</th>
-                <td>X</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>Overwatch</th>
-                <td>X</td>
-                <td>X</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>Story/Snigle Player Games</th>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-            </tr>
-        </table>
-        </section>
+            <!-- Placeholder Container -->
+            <div class="grid-item"></div>
 
-        <section id="games">
-        <h2>Where do you play games?</h2>
-        <fieldset>
-            <legend>Choose your platform</legend>
-        
-            <input type="radio" id="PC" name="Platform" value="K">
-            <label id="kraken">PC</label>
-            <input type="radio" id="Xbox" name="Platform" value="S">
-            <label id="sasquatch">Xbox</label>        
-            <input type="radio" id="PS5" name="Platform" value="M">
-            <label id="mothman">PS5</label>
-        </fieldset>
-        </section>
+            <!-- The End Section -->
+            <div class="grid-item" id="end">
+                <h2>The Beginning of the End</h2>
+                <div class="container">
+                    <img class="image-left" src="images/IMG_3549.jpg" alt="A picture of my gaming PC" width="200"
+                        height="300">
+                    <p>
+                        When my family moved to Canada, my PC journey began, and my love for video games grew even more.
+                        Riot Games' League of Legends fueled this passion, and I became addicted to the game.
+                        After earning money from part-time jobs, I built my first PC in 2018 and upgraded it in 2021.
+                        The image below is my current PC build, updated earlier this year. I still play League of
+                        Legends,
+                        and I believe this game will never leave me, along with sports games like NBA. Even when I'm
+                        old,
+                        I know I'll still be gaming as long as my love for it remains.
+                    </p>
+                </div>
+            </div>
 
+            <!-- Table Section -->
+            <div class="grid-item" id="table">
+                <h2>What I Play and Where I Play Them</h2>
+                <table>
+                    <tr>
+                        <th rowspan="2">Games</th>
+                        <th colspan="3">Platform</th>
+                    </tr>
+                    <tr>
+                        <td>PC Master</td>
+                        <td>Xbox</td>
+                        <td>PS5</td>
+                    </tr>
+                    <tr>
+                        <th>Riot Games (League of Legend/Valorant)</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>HALO series</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Farming Games (Stardew Valley)</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Sports Games (NBA, FIFA, NHL, etc.)</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th>Diablo</th>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Overwatch</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Story/Single Player Games</th>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Placeholder Container -->
+            <div class="grid-item"></div>
+
+            <!-- Games Section -->
+            <div class="grid-item" id="games">
+                <h2>Where Do You Play Games?</h2>
+                <fieldset>
+                    <legend>Choose Your Platform</legend>
+                    <input type="radio" id="PC" name="Platform" value="PC">
+                    <label for="PC">PC</label><br>
+                    <input type="radio" id="Xbox" name="Platform" value="Xbox">
+                    <label for="Xbox">Xbox</label><br>
+                    <input type="radio" id="PS5" name="Platform" value="PS5">
+                    <label for="PS5">PS5</label>
+                </fieldset>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Footer -->
         <footer>
             <nav>
                 <ul>
@@ -134,4 +154,5 @@
         </footer>
     </main>
 </body>
+
 </html>

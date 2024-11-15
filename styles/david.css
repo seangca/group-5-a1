@@ -1,9 +1,14 @@
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
 
+/* Top navigation bar */
 .topnav {
     position: sticky;
     top: 0;
@@ -14,8 +19,6 @@ body {
 
 .topnav a {
     float: left;
-    display: flex;
-    align-items: center;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -24,68 +27,138 @@ body {
 }
 
 .topnav a:hover {
-    background-color: pink;
+    background-color: #575757;
     color: white;
 }
 
-
+/* Main container styling */
 main {
-    margin-inline: 15%;
-    padding-top: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-section {
+/* Grid layout styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+}
+
+.grid-item {
     background-color: #333;
     color: white;
-    border-radius: 17px;
-    padding: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-.logo {
-    width: 100px;
-    height: auto;
-    margin: 0 50px;
+/* Wrapping text around image */
+.grid-item img {
+    float: left;
+    margin: 0 20px 10px 0; /* Spacing around the image */
+    width: 40%; /* Adjust image size as needed */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Table styling */
 table {
     width: 100%;
     border-collapse: collapse;
+    margin: 20px 0;
 }
 
-th,
-td {
+th, td {
     padding: 10px;
     text-align: left;
-    border: 1px solid #CCA133;
+    border: 1px solid cyan;
 }
 
 th {
-    background-color: #CCA133;
-    color: #333;
+    text-align: center;
+    color: white;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+/* Form styling */
+fieldset {
+    border: 1px solid #CCA133;
+    padding: 10px;
+    margin: 20px 0;
 }
 
+legend {
+    font-weight: bold;
+    color: white;
+}
+
+/* Flexbox container for other content */
 .container {
-    display: flex;
-    justify-content: space-around;
+    display: flow-root;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
+.container img {
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for video */
 video {
     width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
-.image-left {
-    float: left;
-    margin: 15px;
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background: #333;
+    color: #f2f2f2;
+    padding: 10px 0;
 }
 
-.image-right {
-    float: right;
-    margin: 15px;
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    #start,
+    #games {
+        grid-column: span 1;
+    }
+
+    .grid-item img {
+        float: none;
+        display: block;
+        margin: 0 auto 10px auto;
+        width: 60%;
+    }
 }

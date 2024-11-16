@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grady</title>
-    <link rel="stylesheet" href="styles/grady.css">
+    <link rel="stylesheet" href="styles//grady.css">
   </head>
 
   <body>
@@ -20,7 +20,7 @@
     </div>
     <header><h1>Grady Keays</h1></header>
 
-    <div id="about">
+    <div id="about" class="flex-container">
       <article>
         <h1>About Me</h1>
         <p>
@@ -34,63 +34,73 @@
       </article>
     </div>
 
-    <div id="fav">
-      <article>
-        <h1>Favourite</h1>
-        <img src="images/grady_image.jpg" alt="Dayz.jpg">
-        <details>
-          <summary style="font-weight: bold">DayZ</summary>
-          <p>
-            DayZ is an open-world survival game that focuses on realism and
-            challenging gameplay. It was originally a mod for a military game
-            called ARMA 2 but later became a standalone game. In DayZ, players
-            are dropped into a fictional city called Chernarus, which zombies
-            have overrun after an apocalypse. The goal in DayZ is simple:
-            survive as long as possible against zombies, environmental dangers,
-            and other players.
-          </p>
-        </details>
-      </article>
+    <div class="container">
+      <div id="fav" class="grid-container">
+        <article>
+          <h1>Favourite</h1>
+          <img src="images/grady_image.jpg" alt="Dayz.jpg">
+          <details>
+            <summary style="font-weight: bold">DayZ</summary>
+            <p>
+              DayZ is an open-world survival game that focuses on realism and
+              challenging gameplay. It was originally a mod for a military game
+              called ARMA 2 but later became a standalone game. In DayZ, players
+              are dropped into a fictional city called Chernarus, which zombies
+              have overrun after an apocalypse. The goal in DayZ is simple:
+              survive as long as possible against zombies, environmental dangers,
+              and other players.
+            </p>
+          </details>
+        </article>
+      </div>
+  
+      <div id="chart">
+        <table class="table">
+          <tr>
+            <th></th>
+            <th>Singeplayer</th>
+            <th>First Person</th>
+            <th>Shooter</th>
+            <th>Open World</th>
+          </tr>
+          <tr>
+            <td>DayZ</td>
+            <td>X</td>
+            <td>✓</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+          <tr>
+            <td>Bioshock</td>
+            <td>✓</td>
+            <td>✓</td>
+            <td>✓</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <td>Dishonored</td>
+            <td>✓</td>
+            <td>✓</td>
+            <td>X</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <td>Skyrim</td>
+            <td>✓</td>
+            <td>✓</td>
+            <td>X</td>
+            <td>X</td>
+          </tr>
+        </table>
+      </div>
     </div>
 
-    <div id="chart">
-      <table class="table">
-        <tr>
-          <th></th>
-          <th>Singeplayer</th>
-          <th>First Person</th>
-          <th>Shooter</th>
-          <th>Open World</th>
-        </tr>
-        <tr>
-          <td>DayZ</td>
-          <td>X</td>
-          <td>✓</td>
-          <td>✓</td>
-          <td>✓</td>
-        </tr>
-        <tr>
-          <td>Bioshock</td>
-          <td>✓</td>
-          <td>✓</td>
-          <td>✓</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Dishonored</td>
-          <td>✓</td>
-          <td>✓</td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Skyrim</td>
-          <td>✓</td>
-          <td>✓</td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-      </table>
-    </div>
+    
   </body>
+
+  <footer>
+    <ul>
+      <p>Grady Keays</p>
+    </ul>
+  </footer>
 </html>

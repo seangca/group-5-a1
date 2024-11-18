@@ -1,106 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grady</title>
-    <link rel="stylesheet" href="styles//grady.css">
-  </head>
+    <title>Grady's Gamer Profile</title>
+    <link rel="stylesheet" href="styles/grady.css">
+</head>
 
-  <body>
-    <div class="topnav">
-      <a class="navleft" href="index.html">Main</a>
-      <a class="navleft" href="sean.html">Sean</a>
-      <a class="navleft" href="david.html">David</a>
-      <a class="navleft" href="grady.html">Grady</a>
+<body>
 
-      <a class="navright" href="#about">About Me</a>
-      <a class="navright" href="#fav">Favourite Game</a>
-      <a class="navright" href="#chart">Chart Of Games</a>
-    </div>
-    <header><h1>Grady Keays</h1></header>
+    <!-- Navigation Bar -->
+    <nav class="topnav">
+        <a href="index.html">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#fav">Favourite Game</a>
+        <a href="#chart">Chart Of Games</a>
+    </nav>
 
-    <div id="about" class="flex-container">
-      <article>
-        <h1>About Me</h1>
-        <p>
-          I started playing video games when I was about four years old. The
-          first console I played on was the PlayStation Two, released on 2000
-          October 26. I have played on my consoles, including Playstation One,
-          Two, Three, Four, and the Wii. Since 2020, I have moved away from
-          console gaming and now play exclusivity on PC. I mostly play single
-          and multiplayer first-person shooter games.
-        </p>
-      </article>
-    </div>
+    <!-- Main Content -->
+    <main>
+        <h1 id="top">Grady Keays' Gamer Profile</h1>
+        <hr>
 
-    <div class="container">
-      <div id="fav" class="grid-container">
-        <article>
-          <h1>Favourite</h1>
-          <img src="images/grady_image.jpg" alt="Dayz.jpg">
-          <details>
-            <summary style="font-weight: bold">DayZ</summary>
-            <p>
-              DayZ is an open-world survival game that focuses on realism and
-              challenging gameplay. It was originally a mod for a military game
-              called ARMA 2 but later became a standalone game. In DayZ, players
-              are dropped into a fictional city called Chernarus, which zombies
-              have overrun after an apocalypse. The goal in DayZ is simple:
-              survive as long as possible against zombies, environmental dangers,
-              and other players.
-            </p>
-          </details>
-        </article>
-      </div>
-  
-      <div id="chart">
-        <table class="table">
-          <tr>
-            <th></th>
-            <th>Singeplayer</th>
-            <th>First Person</th>
-            <th>Shooter</th>
-            <th>Open World</th>
-          </tr>
-          <tr>
-            <td>DayZ</td>
-            <td>X</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-          </tr>
-          <tr>
-            <td>Bioshock</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>X</td>
-          </tr>
-          <tr>
-            <td>Dishonored</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>X</td>
-            <td>X</td>
-          </tr>
-          <tr>
-            <td>Skyrim</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>X</td>
-            <td>X</td>
-          </tr>
-        </table>
-      </div>
-    </div>
+        <!-- About Me Section -->
+        <div class="grid-container">
+            <div class="grid-item" id="about">
+                <h2>About Me</h2>
+                <p>
+                    I started playing video games when I was about four years old. The
+                    first console I played on was the PlayStation Two, released on 2000
+                    October 26. I have played on my consoles, including Playstation One,
+                    Two, Three, Four, and the Wii. Since 2020, I have moved away from
+                    console gaming and now play exclusively on PC. I mostly play single
+                    and multiplayer first-person shooter games.
+                </p>
+            </div>
 
-    
-  </body>
+            <!-- Favourite Game Section -->
+            <div class="grid-item" id="fav">
+                <h2>Favourite Game</h2>
+                <img src="images/grady_image.jpg" alt="Dayz.jpg" class="center">
+                <details>
+                    <summary style="font-weight: bold">DayZ</summary>
+                    <p>
+                        DayZ is an open-world survival game that focuses on realism and
+                        challenging gameplay. It was originally a mod for a military game
+                        called ARMA 2 but later became a standalone game. In DayZ, players
+                        are dropped into a fictional city called Chernarus, which zombies
+                        have overrun after an apocalypse. The goal in DayZ is simple:
+                        survive as long as possible against zombies, environmental dangers,
+                        and other players.
+                    </p>
+                </details>
+            </div>
 
-  <footer>
-    <ul>
-      <p>Grady Keays</p>
-    </ul>
-  </footer>
+            <!-- Chart of Games Section -->
+            <div class="grid-item" id="chart">
+                <h2>Chart of Games</h2>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Singleplayer</th>
+                        <th>First Person</th>
+                        <th>Shooter</th>
+                        <th>Open World</th>
+                    </tr>
+                    <tr>
+                        <td>DayZ</td>
+                        <td>X</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Bioshock</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Dishonored</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>X</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Skyrim</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>X</td>
+                        <td>X</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#fav">Favourite Game</a></li>
+                <li><a href="#chart">Chart Of Games</a></li>
+                <li><a href="#top">Back to Top</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Grady Keays. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
 </html>
+
+

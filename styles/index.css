@@ -27,7 +27,7 @@ body {
 }
 
 .topnav a:hover {
-    background-color: pink;
+    background-color: #575757;
     color: white;
 }
 
@@ -107,23 +107,45 @@ th {
     border-radius: 8px;
 }
 
+#vg img{
+    float: left; 
+    margin-right: 20px; 
+    margin-bottom: 10px; 
+    width: 400px; 
+    height: auto;
+}
 
 video {
     width: 100%;
     border-radius: 10px;
 }
 
-
 footer {
     margin-top: 20px;
     text-align: center;
-    color: #333;
-    background: #f4f4f4;
+    background: #333;
+    color: #f2f2f2;
     padding: 10px 0;
 }
 
-footer p {
-    margin: 0;
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
 }
 
 

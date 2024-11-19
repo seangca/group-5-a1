@@ -54,23 +54,21 @@ main {
     border-radius: 10px;
 }
 
+.grid-item img {
+    display: flow-root;
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 70%;
+    border-radius: 8px;
+}
 
-#introduction {
+#vgPic{
     grid-column: span 2;
 }
 
-#league {
-    grid-column: span 1;
+#vgPic img {
+    width: 100%;
 }
-
-#minecraft {
-    grid-column: span 1;
-}
-
-#roblox {
-    grid-column: span 1;
-}
-
 
 table {
     width: 100%;
@@ -98,14 +96,6 @@ th {
     width: 45%;
     height: auto;
     border-radius: 8px;
-}
-
-#vg img{
-    float: left; 
-    margin-right: 20px; 
-    margin-bottom: 10px; 
-    width: 400px; 
-    height: auto;
 }
 
 video {
@@ -147,8 +137,7 @@ footer ul li a:hover {
         grid-template-columns: 1fr;
     }
 
-    #introduction,
-    #roblox {
+    #vgPic{
         grid-column: span 1;
     }
 }
